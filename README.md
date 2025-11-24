@@ -4,10 +4,5 @@
 
 This repository contains the engineering standards for CoderCo MOT Team (but also for future use by other teams).
 
-## Standards
-
-### Code Style
-
-### Code Structure
-
-### Code Documentation
+- [Pull Request Guidelines](pull-request-guidelines.md)
+- [Terraform Standards](terraform-standards.md)
