@@ -179,12 +179,14 @@ PR 3: Add frontend UI (depends on PR 2)
 ### Don't
 
 - ❌ Ignore comments
-- ❌ Get defensive
+- ❌ Get defensive or take it personally.
 - ❌ Make changes without replying
 - ❌ Mark as resolved without addressing
 
 ### When You Disagree
+
 Explain your reasoning:
+
 ```
 I kept the current approach because:
 - [technical reason]
@@ -198,6 +200,7 @@ to explain the tradeoff.
 ## Making Changes After Review
 
 ### Small Changes
+
 ```bash
 # Make the changes
 git add <files>
@@ -206,6 +209,7 @@ git push origin feature/your-branch
 ```
 
 ### Many Changes
+
 Consider squashing commits before merge (if allowed).
 
 ### Force Push (Use Carefully)
@@ -223,12 +227,14 @@ Never use `--force` without `--force-with-lease`
 ## CI/CD Checks
 
 ### Must Pass Before Merge
+
 - ✅ All tests pass
 - ✅ Linting passes
 - ✅ Security scans pass
 - ✅ Build succeeds
 
 ### If Checks Fail
+
 1. Click on the failed check
 2. Read the error message
 3. Fix the issue locally
@@ -236,6 +242,7 @@ Never use `--force` without `--force-with-lease`
 5. Wait for checks to re-run
 
 ### Common CI Failures
+
 - Linting errors → Fix formatting
 - Test failures → Fix tests or code
 - Build failures → Check dependencies
@@ -244,6 +251,7 @@ Never use `--force` without `--force-with-lease`
 ## Merging Your PR
 
 ### Merge Requirements
+
 - ✅ Minimum approvals met
 - ✅ All CI checks pass
 - ✅ No unresolved comments
@@ -253,16 +261,19 @@ Never use `--force` without `--force-with-lease`
 ### Merge Methods
 
 #### Squash and Merge (Recommended)
+
 - Combines all commits into one
 - Clean history on main
 - Use for feature branches
 
 #### Merge Commit
+
 - Preserves all commits
 - Shows complete history
 - Use for important features
 
 #### Rebase and Merge
+
 - Replays commits on main
 - Linear history
 - Use if commits are clean
@@ -270,52 +281,11 @@ Never use `--force` without `--force-with-lease`
 **Default**: Squash and Merge for most PRs
 
 ### After Merging
+
 1. Delete the feature branch
 2. Close related issues
 3. Update project board
 4. Celebrate 🎉
-
-## PR Anti-Patterns
-
-### ❌ The "Everything" PR
-- 2000+ lines changed
-- Multiple features
-- Refactoring + new features
-- Takes hours to review
-
-**Fix**: Split into smaller PRs
-
-### ❌ The "Trust Me" PR
-- No description
-- No tests
-- "It works on my machine"
-- No explanation
-
-**Fix**: Add context and testing
-
-### ❌ The "Forgotten" PR
-- Opened weeks ago
-- No updates
-- Author disappeared
-- Merge conflicts
-
-**Fix**: Keep PRs active or close them
-
-### ❌ The "Surprise" PR
-- No issue or discussion
-- Big architectural change
-- No prior communication
-- Takes team by surprise
-
-**Fix**: Discuss big changes first
-
-### ❌ The "Drive-by" PR
-- No response to feedback
-- Never updated
-- Author ignores comments
-- Left hanging
-
-**Fix**: Engage with reviewers
 
 ## PR Labels (if applicable)
 
