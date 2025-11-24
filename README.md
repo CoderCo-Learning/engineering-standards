@@ -6,3 +6,4 @@ This repository contains the engineering standards for CoderCo MOT Team (but als
 
 - [Pull Request Guidelines](pull-request-guidelines.md)
 - [Terraform Standards](terraform-standards.md)
+- [Kubernetes Standards](k8s-standards.md)
